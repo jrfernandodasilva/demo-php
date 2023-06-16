@@ -1,14 +1,26 @@
-## build
+## run project local to test
+> needs `php` and `composer` installed
 ```bash
-docker build -t demo-php --rm .
+composer install
+php -S 0.0.0.0:8080 -t src
 ```
 
-## run
+## Docker build
 ```bash
-docker run -v $(pwd):/app -p 8080:8080 demo-php
+docker build -t demo-php:latest .
 ```
 
-## run with docker compose
+## Docker run
+```bash
+docker run --rm -p 8080:8080 -v $(pwd):/app --name demo-php demo-php:latest
+```
+
+## Docker compose run (optional)
 ```bash
 docker compose up -d
+```
+
+## Access docker container via terminal
+```bash
+docker exec -it demo-php-app-1 sh
 ```
