@@ -1,0 +1,17 @@
+{
+    "name": "anderson/php-demo",
+    "autoload": {
+        "psr-4": {
+            "Anderson\\PhpDemo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "andersonmarin",
+            "email": "anderson.marin@outlook.com"
+        }
+    ],
+    "require": {
+        "ajaz/random-quotes-generator-php": "^1.0"
+    }
+}
