@@ -1,5 +1,5 @@
 ## run project local to test
-> needs `php` and `composer` installed
+needs `php` and `composer` installed
 ```bash
 composer install
 php -S 0.0.0.0:8080 -t src
